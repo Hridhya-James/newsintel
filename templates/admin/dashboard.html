@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="{% static 'admin/sidebar.js' %}"></script>
+    <script src="{% static 'admin/dashboard.js' %}"></script>
+</head>
+<body>
+    <div class="flex">
+        <div id="admin-sidebar"></div>
+        <div class="p-6 w-full">
+            <h1 class="text-2xl font-bold mb-4">Admin Dashboard</h1>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="p-4 bg-blue-500 text-white rounded-lg">Total News: <span id="total-news"></span></div>
+                <div class="p-4 bg-green-500 text-white rounded-lg">Total Users: <span id="total-users"></span></div>
+                <div class="p-4 bg-yellow-500 text-white rounded-lg">Sentiment Stats: <span id="sentiment-stats"></span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="{% static 'admin/sidebar.js' %}"></script>
+    <script src="{% static 'admin/news.js' %}"></script>
+</head>
+<body>
+    <div class="flex">
+        <div id="admin-sidebar"></div>
+        <div class="p-6 w-full">
+            <h1 class="text-2xl font-bold mb-4">Manage News</h1>
+            <table class="w-full border-collapse border border-gray-300">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="border p-2">Title</th>
+                        <th class="border p-2">Department</th>
+                        <th class="border p-2">Sentiment</th>
+                    </tr>
+                </thead>
+                <tbody id="news-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
